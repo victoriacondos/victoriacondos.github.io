@@ -1,55 +1,162 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>Victoria Condos</title>
+﻿<!DOCTYPE html>
+<html>
+<title>Victoria Condos: Woman in Computing</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+        margin-bottom: 12px
+    }
+
+    .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: images/composite.jpg
+        min-height: 100%;
+    }
+</style>
 <body>
+    <h2>Disclaimer: This website is under construction! Check back later for updates :)</h2>
+    <!-- Sidebar with image -->
+    <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+        <div class="bgimg"></div>
+    </nav>
 
-<p> Disclaimer: This website is currently under construction! Check back later for more content. </p>
-<!-- Header -->
-<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
-  <img class="w3-image" src="images/usc-horseshoe.jpg" alt="Me" width="1000" height="600">
-  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-gray w3-center">
-    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="text-shadow: 1px 1px 0 #444">VICTORIA CONDOS</h1>
-    <h3 class="w3-hide-medium w3-hide-small" style="text-shadow: 1px 1px 0 #444">Computer Science Student at U of SC</h3>
-    <h3 class="w3-hide-medium w3-hide-small" style="text-shadow: 1px 1px 0 #444">Software Intern at Lockheed Martin</h3>
-  </div>
-  
-  <!-- Navbar (placed at the bottom of the header image) -->
-  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-    <a href="#" class="w3-bar-item w3-button">About Me</a>
-    <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-  </div>
-</header>
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+            <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#aboutme" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+            <a href="#blog" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Blog</a>
+        </div>
+    </nav>
 
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">About Me</a>
-  <a href="#resume" class="w3-bar-item w3-button">Resume</a>
-  <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="resume">
+    <!-- Page Content -->
+    <div class="w3-main w3-padding-large" style="margin-left:40%">
 
-</body>
-  <!-- Images  -->
-  <img src="/images/composite.jpg" alt="Me" class="w3-image" width="310" height="310">
-  
+        <!-- Menu icon to open sidebar -->
+        <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-  </div>
-  <div class="w3-content w3-padding-large w3-margin-top" id="projects">
+        <!-- Header -->
+        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo"><b>Victoria Condos</b></h1>
+            <p>Computer Science Student at University of South Carolina</p>
+            <p>Software Intern at Lockheed Martin</p>
+            <img src="images/composite.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+            <img src="images/composite.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+            <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        </header>
+
+        <!-- About Me Section -->
+        <div class="w3-padding-32 w3-content" id="aboutme">
+            <h2 class="w3-text-grey">About Me</h2>
+            <hr class="w3-opacity">
+
+            
+            <!-- End About Me Section -->
+        </div>
+
+        <!-- Projects Section -->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="projects">
+            <h2>Projects</h2>
+            <hr class="w3-opacity">
+            <p>
+                ADD LINKS TO PROJECTS HERE!!!!!
+            </p>
+            <h3 class="w3-padding-16">My Skills</h3>
+            
+            <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+                <div class="w3-fifth w3-section">
+                    Java
+                </div>
+                <div class="w3-fifth w3-section">
+                    C++
+                </div>
+                <div class="w3-fifth w3-section">
+                    Git
+                </div>
+                <div class="w3-fifth w3-section">
+                    Jira
+                </div>
+                <div class="w3-fifth w3-section">
+                    Tableau
+                </div>
+
+            </div><br>
+
+            <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+                <div class="w3-third w3-section">
+                    <span class="w3-xlarge">119+</span><br>
+                    Credits Earned
+                </div>
+                <div class="w3-third w3-section">
+                    <span class="w3-xlarge">55+</span><br>
+                    Projects Completed
+                </div>
+                <div class="w3-third w3-section">
+                    <span class="w3-xlarge">360+</span><br>
+                    Hours of Revelant Work Experience
+                </div>
+
+            </div>
+
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
 
 
-  
+            <!-- End Project Section -->
+        </div>
 
-  </div>
+        <!-- Blog Section -->
+        <div class="w3-padding-32 w3-content w3-text-grey" id="blog" style="margin-bottom:64px">
+            <h2>Blog</h2>
+            <hr class="w3-opacity">
 
-<!-- End page content -->
-</div>
+            <p>ADD BLOG ENTRIES HERE!!!!! </p>
+
+            
+            <h4>Let's Connect!</h4>
+            <form action="/action_page.php" target="_blank">
+                <!-- ADD LINKED IN LINK HERE-->
+                <a href="https://www.linkedin.com/in/victoria-condos/">
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+                    : https://www.linkedin.com/in/victoria-condos
+                </a>
+            </form>
+            <!-- End Contact Section -->
+        </div>
+
+        
+
+        <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+    </script>
 
 </body>
 </html>
