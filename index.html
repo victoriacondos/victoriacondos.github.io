@@ -21,12 +21,11 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url('images/composite.jpg'); 
-        background-color:rgb(249, 206, 255);
         
     }
 </style>
 <body>
-    
+
     <!-- Sidebar with image -->
     <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
         <div class="bgimg"></div>
@@ -38,10 +37,10 @@
             <i class="fa fa-remove"></i>
         </a>
         <div class="w3-bar-block w3-center w3-light-blue">
-            <a href="#" class="w3-bar-item w3-button w3-text-2020-brilliant-white w3-hover-black" onclick="closeNav()">Home</a>
-            <a href="#aboutme" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
-            <a href="#blog" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Blog</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-black w3-hover-black" onclick="closeNav()">Home</a>
+            <a href="#aboutme" class="w3-bar-item w3-button w3-text-black w3-hover-black" onclick="closeNav()">About Me</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-black w3-hover-black" onclick="closeNav()">Projects</a>
+            <a href="#blog" class="w3-bar-item w3-button w3-text-black w3-hover-black" onclick="closeNav()">Blog</a>
         </div>
     </nav>
 
@@ -52,8 +51,8 @@
         <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
         <!-- Header -->
-        <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-            <h1 class="w3-jumbo"><b>Victoria Condos</b></h1>
+        <header class="w3-container w3-center w3-indigo" style="padding:128px 16px" id="home">
+            <h1 class="w3-jumbo w3-dark-indigo"><b>Victoria Condos</b></h1>
             <p>Computer Science Student at University of South Carolina</p>
             <p>Software Intern at Lockheed Martin</p>
             <img src="images/composite.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
@@ -67,34 +66,25 @@
         <div class="w3-padding-32 w3-content" id="aboutme">
             <h2 class="w3-text-indigo">About Me</h2>
             <hr class="w3-opacity">
-            <p>  My name is Victoria Condos. <br />
-
-              I am a woman in computing at Lockheed Martin Rotary and Missions Systems. <br />
-
-              My current role is as a software intern where I serve remotely. In this position last summer, I worked on test automation. Also, I acted as project manager for my intern team as part of the Summer 2020 RMS Intern Project. As a result of this work, I have been invited to return to the internship program during the summer of 2021. <br />
-
-              As a result of my success in my intern role, I have been asked to serve as an Intern Ambassador for the 2020-2021 academic year: an opportunity only offered to 20 of over 800 RMS Interns! <br />
-
-              I am also the director of logistics for my sorority, Gamma Phi Beta, Zeta Sigma Chapter. In this position, I lead a team of women in organizing meetings between potential and active members during recruitment and tracking the votes from each round. <br />
-
-              In fact, my hard work paid off when we successfully recruited the largest pledge class on campus in 2019 with 142 new members joining our sorority. <br />
-
-              On a personal note, I enjoy spending my free time snowboarding, hiking, or reading!  </p>
-            
-            <!-- End About Me Section -->
-        </div>
-
-        <!-- Projects Section -->
-        <div class="w3-content w3-justify w3-text-indigo w3-padding-32" id="projects">
-            <h2>Projects</h2>
-            <hr class="w3-opacity">
-            <h4>CSCE 567 Final Project: Air Pollution in the United States</h4>
             <p>
-                During the Spring 2021 semester, I took CSCE 567: Visualization Tools. In this course, we learned about creating effective and accurate visualizations, and for my final project, I created a website to educate viewers about air pollution in the United States.
-                To view my final project, click the following link: <a href = "https://sites.google.com/view/usairpollutionvc/home">Visualizing Air Pollution in the US</ahref>
+                My name is Victoria Condos. <br />
+
+                I am a woman in computing at Lockheed Martin Rotary and Missions Systems. <br />
+
+                My current role is as a software intern where I serve remotely. In this position last summer, I worked on test automation. Also, I acted as project manager for my intern team as part of the Summer 2020 RMS Intern Project. As a result of this work, I have been invited to return to the internship program during the summer of 2021. <br />
+
+                As a result of my success in my intern role, I have been asked to serve as an Intern Ambassador for the 2020-2021 academic year: an opportunity only offered to 20 of over 800 RMS Interns! <br />
+
+                I am also the director of logistics for my sorority, Gamma Phi Beta, Zeta Sigma Chapter. In this position, I lead a team of women in organizing meetings between potential and active members during recruitment and tracking the votes from each round. <br />
+
+                In fact, my hard work paid off when we successfully recruited the largest pledge class on campus in 2019 with 142 new members joining our sorority. <br />
+
+                On a personal note, I enjoy spending my free time snowboarding, hiking, or reading!
             </p>
-            <h3 class="w3-padding-16">My Skills</h3>
-            
+
+            <br />
+            <h4 class="w3-padding-16">My Skills</h4>
+
             <div class="w3-row w3-center w3-dark-indigo w3-padding-16 w3-section">
                 <div class="w3-fifth w3-section">
                     Java
@@ -130,46 +120,60 @@
 
             </div>
 
-           
+
 
 
             <!-- End Project Section -->
         </div>
 
-        <!-- Blog Section -->
-        <div class="w3-padding-32 w3-content w3-text-indigo" id="blog" style="margin-bottom:64px">
-            <h2>Blog</h2>
-            <hr class="w3-opacity">
-
-            <p>ADD BLOG ENTRIES HERE!!!!! </p>
-
-            
-            <h4>Let's Connect!</h4>
-            <form action="/action_page.php" target="_blank">
-                <!-- ADD LINKED IN LINK HERE-->
-                <a href="https://www.linkedin.com/in/victoria-condos/">
-                    <i class="fa fa-linkedin w3-hover-opacity"></i>
-                    : https://www.linkedin.com/in/victoria-condos
-                </a>
-            </form>
-            <!-- End Contact Section -->
-        </div>
-
-        
-
-        <!-- END PAGE CONTENT -->
+        <!-- End About Me Section -->
     </div>
 
-    <script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
+    <!-- Projects Section -->
+    <div class="w3-content w3-justify w3-text-dark-gray w3-padding-32" id="projects">
+        <h2 class="w3-text-indigo">Projects</h2>
+        <hr class="w3-opacity">
+        <h4>CSCE 567 Final Project: Air Pollution in the United States</h4>
+        <p>
+            During the Spring 2021 semester, I took CSCE 567: Visualization Tools. In this course, we learned about creating effective and accurate visualizations, and for my final project, I created a website to educate viewers about air pollution in the United States.
+            To view my final project, click the following link: <a href="https://sites.google.com/view/usairpollutionvc/home">Visualizing Air Pollution in the US</a href>
+        </p>
 
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+
+
+    </div>
+
+
+    <!-- Blog Section -->
+    <div class="w3-padding-32 w3-content w3-text-dark-gray" id="blog" style="margin-bottom:64px">
+        <h2 class="w3-text-indigo">Blog</h2>
+        <hr class="w3-opacity">
+
+        <p>ADD BLOG ENTRIES HERE!!!!! </p>
+
+        <br />
+
+
+    </div>
+
+    <h4>Let's Connect!</h4>
+    <!-- ADD LINKEDIN LINK HERE-->
+    <a href="https://www.linkedin.com/in/victoria-condos/">
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        : https://www.linkedin.com/in/victoria-condos
+    </a>
+    <!-- END PAGE CONTENT -->
+
+    <script>
+        // Open and close sidebar
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
     </script>
 
 </body>
